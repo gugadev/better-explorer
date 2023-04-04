@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#header {
+    padding: 20px;
+    margin: 0;
+    font-size: 20px;
+    color: #555555;
+}
+.just-explore {
+    display: flex;
+    height: 100vh;
+}
+.just-explore__sidebar {
+    flex: 0 0 25%;
+    background-color: #EAECF0;
+    /* box-shadow: 0 2px 3px 1px rgba(0,0,0,.12); */
+    border-right: 1px solid #e8e9ea;
+    z-index: 1;
+}
+.sidebar__brand {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #03e693;
+}
+.sidebar__brand h1 {
+    margin: 0;
+    padding: 0;
+    border: none;
+    color: #0099cc;
+    color: #313131;
+}
+.sidebar__locations {
+    padding: 0 20px;
+    list-style: none;
+}
+.locations__title {
+    padding: 0 12px;
+    margin-top: 16px;
+}
+.locations__title h4 {
+    color: #888888;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: normal;
+}
+.locations__location a {
+    color: #0099CC;
+    font-weight: 500;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 20px 0;
+    padding: 12px;
+}
+.locations__location a:visited {
+    color: #0099CC;
+}
+.locations__location a.active {
+    background-color: #d5d5d6;
+}
+.locations__location img {
+    height: 24px;
+    width: 24px;
+    filter: grayscale(100%)
+}
+.locations__location span {
+    font-size: 14px;
+    /* text-transform: uppercase; */
+    margin-left: 12px;
+}
+.just-explore__canvas {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.canvas__toolbar {
+    background-color: #ffffff;
+    flex: 0 0 60px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    display: flex;
+    border-bottom: 1px solid #eee;
+}
+.canvas__toolbar h1 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.canvas__grid {
+    flex: 1;
+    display: grid;
+    grid-gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 106px));
+    grid-template-rows: repeat(auto-fill, 96px);
+}
+.folder {
+    width: 80px;
+    cursor: pointer;
+}
+.folder__image-container {
+    padding: 8px 0;
+}
+.folder__image-container img {
+    display: block;
+    width: 80px;
+}
+.folder__name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    text-align: center;
+    color: #555555;
+    font-size: 11px;
+    text-transform: uppercase;
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Just Explore",
+    "description": "Some tweaks for default Chrome explorer",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "permissions": [
+      "webNavigation"
+    ],
+    "web_accessible_resources": [
+      {
+        "resources": ["explorer.css", "icons/*"],
+        "matches": ["file:///*"]
+      }
+    ],
+    "content_scripts": [
+        {
+          "js": ["content.js"],
+          "css": ["explorer.css"],
+          "matches": ["file:///*"]
+        }
+      ]
+  }
