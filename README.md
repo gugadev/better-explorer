@@ -18,7 +18,11 @@ You'll find in the line #1 of the `content.js` script a constant named `username
 - Pictures
 - Movies
 
-## How can I install this
+### Why I just don't use FileSystem API?
+
+Well, this a pretty interesting question. The FileSystem API just can be used in a secure context (https), so, given that `file://` isn't a secure context this extension can't use the FS API.
+
+## How can I install this?
 
 If you're a developer, you already know it. If you're a basic user, follow the next steps:
 
