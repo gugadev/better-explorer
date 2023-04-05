@@ -2,11 +2,7 @@
 
 Better Explorer is a Chromium extension to tweak the default browser's file explorer.
 
-<div align="center">
-    <img src="screenshots/light.png" width="480px" />
-    <div style="width: 20px">
-    <img src="screenshots/dark.png" width="480px" />
-</div>
+<div align="center"><img src="screenshots/light.png" width="380px" /><img src="screenshots/dark.png" width="380px" /></div>
 
 ## Support
 
